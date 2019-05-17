@@ -1,5 +1,5 @@
-FROM ubuntu:xenial
-MAINTAINER tloriato
+FROM ubuntu:18.04
+MAINTAINER narkeeso
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -10,9 +10,9 @@ RUN apt-get update \
         && apt-get clean \
         && rm -rf /var/lib/apt/lists/* \
         && cd /tmp \
-        && wget https://www.multichain.com/download/multichain-2.0-release.tar.gz \
-        && tar -xvzf multichain-2.0-release.tar.gz \
-        && cd multichain-2.0-release \
+        && wget https://www.multichain.com/download/multichain-2.0.1.tar.gz \
+        && tar -xvzf multichain-2.0.1.tar.gz \
+        && cd multichain-2.0.1 \
         && mv multichaind multichain-cli multichain-util /usr/local/bin \
         && cd /tmp \
         && rm -Rf multichain*

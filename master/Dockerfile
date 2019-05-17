@@ -1,5 +1,5 @@
-FROM tloriato/multichain-base:2.1.0
-MAINTAINER tloriato
+FROM narkeeso/multichain-base:2.0.1
+MAINTAINER narkeeso
 
 COPY ./runchain.sh /root/runchain.sh
 COPY ./blocknotify.sh /root/blocknotify.sh

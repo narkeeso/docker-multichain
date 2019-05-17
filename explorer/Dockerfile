@@ -1,5 +1,5 @@
-FROM tloriato/multichain-node:2.1.0
-MAINTAINER tloriato
+FROM narkeeso/multichain-node:2.0.1
+MAINTAINER narkeeso
 
 RUN apt-get update \
         && apt-get install -q -y python python-dev python-pip sqlite3 libsqlite3-dev \

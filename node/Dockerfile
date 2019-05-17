@@ -1,5 +1,5 @@
-FROM tloriato/multichain-base:2.1.0
-MAINTAINER tloriato
+FROM narkeeso/multichain-base:2.0.1
+MAINTAINER narkeeso
 
 ADD ./runchain.sh /root/runchain.sh
 RUN chmod a+x /root/runchain.sh
